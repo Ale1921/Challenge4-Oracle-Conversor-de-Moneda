@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <title>Conversor de divisas</title>
+    <script src="app.js"></script>
+</head>
+</html>
+    <center>
+        <h1>Conversor de Divisas</h1>
+        Cantidad: <input type="range" id="cantidad" min="0" max="1000" value="0" on change="convertir()">
+        <span id="valor">0</span><br>
+        Convertir De:
+        <select id="de" onchange="convertir()">
+            <option value="1">Peso</option>
+            <option value="2">Dolar</option>
+            <option value="3">Euro</option>
+        </select><br><br>
+        Convertir A:
+        <select id="a" onchange="convertir()">
+            <option value="1">Peso</option>
+            <option value="2">Dolar</option>
+            <option value="3">Euro</option>
+        </select><br>
+        <h1 id="resultado">Resultado: $0.00</h1>
+    </center>
+</body>
+</html>
